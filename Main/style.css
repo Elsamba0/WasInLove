@@ -5,6 +5,68 @@
   box-sizing: border-box;
 }
 
+body{
+  background-image: url(../public/Broken\ 1.png);
+  background-size: 40px;
+  background-position: center;
+  background-repeat: repeat;
+  height: 90vh;
+  width: 100%;
+}
+
+.Main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.b_main{
+  height: 100vh;
+  width: 100%;
+}
+
+.Main .bg {
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: solid #c2c2c2 2px;
+  padding: 25px 40px;
+}
+
+.Main .bg_W{
+  background-color: #dddddd;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: solid #c2c2c2 2px;
+}
+
+.Text{
+  padding: 15px 0;
+  text-align: center;
+  color: #222;
+  width: 280px;
+}
+
+.typing-text{
+  font-size: 22px;
+  direction: ltr;
+  width: 100%;
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: 1.6;
+}
+
+.typing-text::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
+
 .card {
   --main-color: #fff;
   --bg-color: #090909;
@@ -120,11 +182,13 @@
 /* From Uiverse.io by ahmed150up */ 
 .voice-chat-card {
   width: 300px;
-  margin: 20px auto;
+  margin-top: 20px ;
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 2px 2px 10px #ccc;
-  padding: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: #e8e8e8;
 }
 

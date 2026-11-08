@@ -16,3 +16,9 @@ btn_sub.onclick = () => {
     inp.style.color = "#ff2d2d";
   }
 }
+
+inp.addEventListener("keydown", () => {
+  if(event.key === "Enter"){
+    btn_sub.click();
+  }
+})
